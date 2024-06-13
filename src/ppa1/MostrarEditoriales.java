@@ -16,6 +16,7 @@ import java.sql.Statement;
         
         System.out.println("Conectando a la base de datos...");
         //Paso 1. Obtener la conexion 
+        // conexxion correcta
         Connection con = conexion.getConexion();
         
         // Objetos necesarios para hacer una consulta
@@ -36,6 +37,7 @@ import java.sql.Statement;
 			
 			//Paso 4. Recorrer el resultado
 			while (resultado.next ()) {
+				// datos no correctamente especificados deben corresponder al nombre de las columnas de la BD
 				int cod_Editorial = resultado.getInt("cod_Editorial");
 				String nombre= resultado.getString("nombre");
 				int año = resultado.getInt("año");
