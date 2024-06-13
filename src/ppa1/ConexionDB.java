@@ -4,9 +4,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+// proyecto correcto 
 public class ConexionDB {
 
-
+//clase correcta y con la conexión correcta
 /** Propiedades de la conexion */
 	//Cambiar el dato para conectar a otra base de datos
 	private static String database="biblioteca";
@@ -35,7 +36,7 @@ public class ConexionDB {
 		//Registrar el driver. Previamente habrá que haber añadido el driver
 		// al proyecto (Build Path)
 		
-		
+		// driver incorrecto y no incroporado a la ruta de construccion
 			Class.forName("org.mariadb.jdbc.Driver");
 			
 			//Obtenemos el objeto Connection de la clase 
